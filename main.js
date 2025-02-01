@@ -24,7 +24,7 @@ nextBtn.addEventListener("click", () => {
   line[i].style.width = "100px";
   circle[j].style.background = "#3cbbed";
 
-  if (i < 3 && j < 4) {
+  if (i < line.length && j < circle.length) {
     // console.log("Line " + i, " Circle " + j);
     i++;
     j++;
@@ -35,7 +35,7 @@ nextBtn.addEventListener("click", () => {
     prevBtn.removeAttribute("disabled");
     prevBtn.style.background = "#3cbbed";
   }
-  if (j == 4) {
+  if (j == circle.length) {
     nextBtn.setAttribute("disabled", true);
     nextBtn.style.background = "grey";
   }
